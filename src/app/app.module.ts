@@ -3,16 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ProfesoresComponent } from './profesores/profesores.component';
+import { FormsModule } from '@angular/forms';
+import { AlumnosComponent } from './alumnos/alumnos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProfesoresComponent,
+    AlumnosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

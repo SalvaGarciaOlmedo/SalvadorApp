@@ -1,0 +1,13 @@
+
+<p>Componente AlumnosComponent</p>
+<input type="text" placeholder="Introduce id " [(ngModel)]="inputIdGet" />
+<input type="text" placeholder="Introduce usuario " [(ngModel)]="inputUsuarioGet" />
+<input type="text" placeholder="Introduce email " [(ngModel)]="inputEmailGet" />
+<input type="text" placeholder="Introduce edad " [(ngModel)]="inputEdadGet" />
+
+<input type="button" value="Get" class="btn btn-primary" (click)="post()">
+
+
+<pre>
+    {{this.resultadoPeticion | json}}
+</pre>
